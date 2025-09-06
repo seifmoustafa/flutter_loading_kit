@@ -39,7 +39,7 @@ class LoadingOverlay extends StatelessWidget {
           GestureDetector(
             onTap: dismissible ? onDismiss : null,
             child: Container(
-              color: (color ?? Colors.black).withOpacity(0.5),
+              color: (color ?? Colors.black).withValues(alpha: 0.5),
               child: Center(
                 child: GestureDetector(
                   onTap: () {}, // Prevent tap from propagating
@@ -51,7 +51,7 @@ class LoadingOverlay extends StatelessWidget {
                       borderRadius: BorderRadius.circular(borderRadius),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha: 0.1),
                           blurRadius: 10,
                           spreadRadius: 2,
                         ),

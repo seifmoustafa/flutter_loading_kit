@@ -57,7 +57,7 @@ class CustomProgressHud extends StatelessWidget {
         child,
         if (isLoading)
           ModalBarrier(
-            color: (backgroundColor ?? color).withOpacity(opacity),
+            color: (backgroundColor ?? color).withValues(alpha: opacity),
             dismissible: dismissible,
             onDismiss: dismissible ? onDismiss : null,
           ),
@@ -70,7 +70,7 @@ class CustomProgressHud extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
+                    color: Colors.black.withValues(alpha: 0.1),
                     blurRadius: 10,
                     spreadRadius: 2,
                   ),
