@@ -1,0 +1,30 @@
+name: flutter_loading_kit
+description: A comprehensive Flutter package for loading states, progress indicators, and overlay components with cross-platform support.
+version: 1.0.0
+homepage: https://github.com/seifmoustafa/flutter_loading_kit
+repository: https://github.com/seifmoustafa/flutter_loading_kit
+issue_tracker: https://github.com/seifmoustafa/flutter_loading_kit/issues
+documentation: https://github.com/seifmoustafa/flutter_loading_kit#readme
+topics:
+  - flutter
+  - loading
+  - ui
+  - widgets
+  - progress
+  - overlay
+  - cross-platform
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
